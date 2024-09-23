@@ -1,0 +1,13 @@
+
+  services:
+    mailserver:
+      build: .
+      hostname: localhost
+      ports:
+        - "25:25"
+        - "143:143"
+        - "587:587"
+        - "993:993"
+      volumes:
+        - ./mail:/var/mail
+      restart: always

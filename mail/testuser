@@ -1,0 +1,56 @@
+From root@localhost.localhost  Sun Sep 22 15:22:05 2024
+Return-Path: <root@localhost.localhost>
+X-Original-To: testuser@localhost
+Delivered-To: testuser@localhost.localhost
+Received: by localhost (Postfix, from userid 0)
+	id 5B2DA9F89; Sun, 22 Sep 2024 15:22:05 +0000 (UTC)
+Subject: Test
+Message-Id: <20240922152205.5B2DA9F89@localhost>
+Date: Sun, 22 Sep 2024 15:22:05 +0000 (UTC)
+From: root <root@localhost.localhost>
+
+From root@localhost  Sun Sep 22 15:38:30 2024
+Return-Path: <root@localhost>
+X-Original-To: testuser@localhost
+Delivered-To: testuser@localhost
+Received: by localhost (Postfix, from userid 0)
+	id 9283391F3; Sun, 22 Sep 2024 15:38:30 +0000 (UTC)
+Subject: Test Subject
+To: <testuser@localhost>
+User-Agent: mail (GNU Mailutils 3.14)
+Date: Sun, 22 Sep 2024 15:38:30 +0000
+Message-Id: <20240922153830.9283391F3@localhost>
+From: root <root@localhost>
+
+This is a test email
+
+From root@localhost  Mon Sep 23 07:31:43 2024
+Return-Path: <root@localhost>
+X-Original-To: testuser@localhost
+Delivered-To: testuser@localhost
+Received: by localhost (Postfix, from userid 0)
+	id 4C864C6B1; Mon, 23 Sep 2024 07:31:43 +0000 (UTC)
+Subject: Test Subject
+To: <testuser@localhost>
+User-Agent: mail (GNU Mailutils 3.14)
+Date: Mon, 23 Sep 2024 07:31:42 +0000
+Message-Id: <20240923073143.4C864C6B1@localhost>
+From: root <root@localhost>
+
+This is a test email
+
+From root@localhost  Mon Sep 23 09:27:27 2024
+Return-Path: <root@localhost>
+X-Original-To: testuser@localhost
+Delivered-To: testuser@localhost
+Received: by localhost (Postfix, from userid 0)
+	id AC12FEB2A; Mon, 23 Sep 2024 09:27:27 +0000 (UTC)
+Subject: Test Subject
+To: <testuser@localhost>
+User-Agent: mail (GNU Mailutils 3.14)
+Date: Mon, 23 Sep 2024 09:27:27 +0000
+Message-Id: <20240923092727.AC12FEB2A@localhost>
+From: root <root@localhost>
+
+This is a test email
+

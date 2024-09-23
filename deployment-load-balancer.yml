@@ -1,0 +1,58 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: email-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: email-server
+  template:
+    metadata:
+      labels:
+        app: email-server
+    spec:
+      containers:
+      - name: email-server
+        image: akashdhiman920/emailserver:latest
+        ports:
+        - containerPort: 25
+        - containerPort: 110
+        - containerPort: 143
+        - containerPort: 587
+        - containerPort: 993
+        env:
+        - name: DEBIAN_FRONTEND
+          value: "noninteractive"
+        volumeMounts:
+        - name: mail-storage
+          mountPath: /var/mail
+      volumes:
+      - name: mail-storage
+        emptyDir: {}
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: email-server
+spec:
+  selector:
+    app: email-server
+  type: LoadBalancer
+  ports:
+    - name: smtp
+      port: 25
+      targetPort: 25
+    - name: pop3
+      port: 110
+      targetPort: 110
+    - name: imap
+      port: 143
+      targetPort: 143
+    - name: submission
+      port: 587
+      targetPort: 587
+    - name: imaps
+      port: 993
+      targetPort: 993
